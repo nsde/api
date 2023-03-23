@@ -1,0 +1,16 @@
+{
+    "hide-files.files": [
+        ".vscode",
+        "api/__pycache__"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".vscode": true,
+        "api/__pycache__": true
+    }
+}

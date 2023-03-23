@@ -1,0 +1,1 @@
+screen -S API uvicorn main:app --reload --port 4242
