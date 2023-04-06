@@ -17,6 +17,11 @@ def root(request: Request):
     """Redirects to the uptime overview. This won't work when the "Try it out" button in the documentation is pressed, as it returns a redirect, not an usual response."""
     return fastapi.responses.RedirectResponse(url='https://github.com/nsde/uptime#readme')
 
+@router.get('/specs', tags=['Info'])
+def root(request: Request):
+    """Redirects to raw markdown content of my system specification gist. This won't work when the "Try it out" button in the documentation is pressed, as it returns a redirect, not an usual response."""
+    return fastapi.responses.RedirectResponse(url='https://gist.github.com/nsde/d0ba4a3e4695df66a4c449ece5a5f7f9/raw')
+
 @router.get('/status', tags=['Info'])
 def status(request: Request):
     """Returns the status of the API. Used for health checks."""
